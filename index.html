@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Fun Quiz Site</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>Pick a Quiz</h1>
+    <p>Or learn <a id="link-more" href=""></a></p>
+
+    <!-- Quiz selection screen -->
+    <section id="quiz-select" class="screen">
+      <div id="quizzes"></div>
+    </section>
+
+    <!-- Quiz play screen -->
+    <section id="quiz-play" class="screen hidden">
+      <div class="header">
+        <h2 id="quiz-title"></h2>
+        <div id="progress">Question <span id="qIndex">1</span> / <span id="qTotal">1</span></div>
+      </div>
+
+      <div id="question-area">
+        <p id="question-text"></p>
+      </div>
+
+      <div id="answers">
+        <button class="answer-btn" data-index="0"></button>
+        <button class="answer-btn" data-index="1"></button>
+        <button class="answer-btn" data-index="2"></button>
+      </div>
+
+      <div class="controls">
+        <button id="next-btn" class="hidden">Next question</button>
+        <button id="quit-btn">Quit</button>
+      </div>
+    </section>
+
+    <!-- Result screen -->
+    <section id="result-screen" class="screen hidden">
+      <h2>Results</h2>
+      <p id="result-text"></p>
+      <button id="restart-btn">Back to quizzes</button>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
