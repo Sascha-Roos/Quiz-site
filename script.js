@@ -32,16 +32,9 @@ const nextBtn = document.getElementById('next-btn');
 const quitBtn = document.getElementById('quit-btn');
 const restartBtn = document.getElementById('restart-btn');
 const resultText = document.getElementById('result-text');
-const linkMore = document.getElementById("link-more");
 
 const body = document.querySelector("body");
 body.style.background = `rgb(${Math.random() * 255}, ${Math.random() * 255}, ${Math.random() * 255})`;
-
-linkMore.setAttribute("href", "https://youtube.com");
-linkMore.textContent = "more";
-linkMore.style.background = "white";
-linkMore.style.cursor = "grab";
-
 
 
 /* ---------- App state ---------- */
